@@ -1,3 +1,10 @@
-import type {Metadata} from "next";import "./globals.css";import "./real.css";
+import type {Metadata} from "next";
+import "./globals.css";
+import "./real.css";
+import "./touch.css";
+
 export const metadata:Metadata={metadataBase:new URL("https://fabiobrito01.github.io/agentostudio-product-demos/"),title:"AgentOStudio · Demonstração Interativa",description:"Experimente uma demonstração completa e segura do Sistema de Gestão Escolar AgentOStudio.",openGraph:{title:"AgentOStudio · Demonstração Interativa",description:"Gestão Escolar na prática, com dados 100% fictícios.",images:[{url:"/og.png",width:1536,height:1024}]},twitter:{card:"summary_large_image",title:"AgentOStudio · Demonstração Interativa",description:"Gestão Escolar na prática.",images:["/og.png"]}};
-export default function Layout({children}:{children:React.ReactNode}){return <html lang="pt-BR"><body>{children}</body></html>}
+
+export default function Layout({children}:{children:React.ReactNode}){
+  return <html lang="pt-BR"><body>{children}</body></html>;
+}
