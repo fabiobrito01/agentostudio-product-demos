@@ -1,0 +1,32 @@
+.appIcon{display:inline-block;flex:0 0 auto;vertical-align:middle}
+.iconText{display:inline-flex;align-items:center;gap:8px}
+.iconButton{display:inline-grid!important;place-items:center;min-width:44px;min-height:44px;padding:10px!important}
+button,a,[role="button"],.comunicados article,.equipe article,.stats article,.adminLinks button,.studentList>button,.matrixRow button{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+button,a,[role="button"],.comunicados article,.equipe article,.stats article,.adminLinks button,.studentList>button,.matrixRow button{transition:transform .14s ease,box-shadow .14s ease,background-color .14s ease,border-color .14s ease,color .14s ease,opacity .14s ease}
+button:active,a:active,[role="button"]:active,.adminLinks button:active,.studentList>button:active,.matrixRow button:active{transform:scale(.98)}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[role="button"]:focus-visible{outline:3px solid #f59e0b;outline-offset:3px}
+.app aside nav button i,.adminLinks i,.studentList i,.comunicados article>i,.timeline article>i{display:grid;place-items:center}
+.app aside nav button.ativo{background:#e8eeff;color:#153da9;font-weight:800;border-color:#d9e2ff}
+.brandIcon,.capLogo .appIcon,.brasao .appIcon{width:1em;height:1em}
+.headerTitle{display:inline-flex;align-items:center;gap:8px}
+.headerActions{display:flex;align-items:center}
+.social button{display:inline-flex;align-items:center;gap:7px}
+.acao b,.blocoHead button,.cab>button,.tools button,.financeTools button,.boletimTools button,.outline,.salvar{display:inline-flex;align-items:center;gap:7px}
+.acao .nextIcon{grid-column:2;grid-row:1/3;align-self:center}
+.emptyReal .appIcon{color:#2452da}
+.protect{align-items:flex-start}
+.protect>.appIcon{margin-top:2px}
+.whiteCard h2,.whiteCard h3,.infoLine,.aviso,.summaryChips span{display:flex;align-items:center;gap:8px}
+.rowActions button{min-width:40px;min-height:40px;display:grid;place-items:center}
+.fab{display:inline-flex!important;align-items:center;justify-content:center;gap:7px;min-height:48px}
+.modal .x{display:grid;place-items:center;min-width:44px;min-height:44px}
+.timeline article>i{font-style:normal}
+@media (hover:hover){
+  button:hover,a:hover,[role="button"]:hover{transform:translateY(-1px)}
+  .app aside nav button:hover,.adminLinks button:hover,.studentList>button:hover{background:#edf2ff}
+  .stats article:hover,.equipe article:hover,.comunicados article:hover{box-shadow:0 8px 24px #17203314}
+  .matrixRow button:hover{filter:brightness(.98)}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+}
