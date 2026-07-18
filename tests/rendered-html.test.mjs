@@ -14,7 +14,25 @@ async function render() {
     }),
     {
       ASSETS: {
-        fetch: async () => new Response("Not found", { status: 404 }),
+        fetch: async (request) => {
+          const { pathname } = new URL(request.url);
+          const assetPath = pathname === "/" ? "index.html" : pathname.slice(1);
+
+          try {
+            const body = await readFile(
+              new URL(`../dist/client/${assetPath}`, import.meta.url),
+            );
+            const contentType = assetPath.endsWith(".html")
+              ? "text/html; charset=utf-8"
+              : "application/octet-stream";
+            return new Response(body, {
+              status: 200,
+              headers: { "content-type": contentType },
+            });
+          } catch {
+            return new Response("Not found", { status: 404 });
+          }
+        },
       },
     },
     {
